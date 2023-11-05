@@ -1,17 +1,10 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Posts from "./pages/Posts";
-
+import Notes from "./Components/MainNotes/Notes";
+import './App.css'
 function App() {
   return (
-    <Router>
-    <div className="App">
-      <Routes>
-        <Route path=":id" element={<Posts/>}></Route>
-        <Route path="/" element={<Home/>}></Route>
-      </Routes>
+    <div>
+      <Notes/>
     </div>
-    </Router>
   );
 }
 
